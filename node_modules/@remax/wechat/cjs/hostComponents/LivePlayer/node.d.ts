@@ -1,0 +1,26 @@
+export declare const alias: {
+    id: string;
+    className: string;
+    style: string;
+    animation: string;
+    src: string;
+    mode: string;
+    autoplay: string;
+    muted: string;
+    orientation: string;
+    objectFit: string;
+    background: string;
+    minCache: string;
+    maxCache: string;
+    soundMode: string;
+    autoPauseIfNavigate: string;
+    autoPauseIfOpenNative: string;
+    pictureInPictureMode: string;
+    onStateChange: string;
+    onFullscreenChange: string;
+    onNetStatus: string;
+    onAudioVolumeNotify: string;
+    onEnterPictureInPicture: string;
+    onLeavePictureInPicture: string;
+};
+export declare const props: string[];

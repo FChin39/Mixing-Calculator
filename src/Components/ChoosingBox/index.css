@@ -1,0 +1,25 @@
+
+
+.button{
+
+  background-color: #B5A09C;
+  color: white;
+  border-radius: 18px 18px 0px 0px;
+  width: 33vw;
+  font-size: medium;
+
+}
+
+
+.choosing-box{
+        background-attachment: fixed;
+        background-color: white;
+        flex-direction: row;
+        border-radius: 18px;
+
+}
+
+.button:active {
+    background-color: #15466B;
+  }
+

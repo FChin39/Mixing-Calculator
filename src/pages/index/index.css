@@ -1,0 +1,30 @@
+.app {
+  text-align: center;
+  padding: 0 24px;
+}
+
+
+.text {
+  margin-top: 64px;
+  color: #000;
+}
+
+.header {
+  padding-top: 30%;
+  background-color: #282c34;
+  font-size: 40px;
+  color: white;
+}
+
+
+
+.logo-image{
+
+  display: flex;
+  margin: auto;
+  height: 100px;
+  background-color: #15466B;
+  border-radius:  0px 0px 38.2px 38.2px;
+  width: 100vw;
+
+}

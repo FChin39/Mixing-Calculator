@@ -1,0 +1,78 @@
+.input-box{
+
+    background-attachment: fixed;
+    background-color: white;
+    margin: auto;
+    flex-direction: row;
+    border-radius: 18px;
+    width: 98vw;
+
+}
+
+.input-bpm-box{
+    background-color: white;
+    width: 37vw;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100px;
+    border-radius: 18px;
+    border: 3.8px solid #0C2C45;
+}
+
+
+
+.reset-button{
+    background-color: #DE7471;
+    color: white;
+  border-radius: 18px;
+  width: 29vw;
+  font-size: medium;
+height: 100px;
+}
+
+
+.reset-button:active {
+    background-color: #A10532;
+  }
+
+
+
+.calculator-button{
+
+background-color: #0C2C45;
+color: white;
+border-radius: 18px;
+font-size: medium;
+width: 29vw;
+height: 100px;
+
+
+
+text-decoration: none;
+overflow: hidden;
+cursor: pointer;
+
+}
+
+.calculator-button:after{
+    content: '处理中...processing...';
+    background: #68ABA4;
+    display: block;
+
+    opacity: 0;
+    transition: all 0.8s;
+    
+    }
+
+
+    .calculator-button:active:after{
+
+        padding: 0;
+        margin: 0;
+        opacity: 0.9;
+        transition: 0s;
+        
+    }
+
+
+

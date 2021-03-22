@@ -1,0 +1,145 @@
+.input-box{
+
+    background-attachment: fixed;
+    background-color: white;
+    margin: auto;
+    flex-direction: row;
+    border-radius: 18rpx;
+    width: 98vw;
+
+}
+
+.input-bpm-box{
+    background-color: white;
+    width: 37vw;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100rpx;
+    border-radius: 18rpx;
+    border: 3.80rpx solid #0C2C45;
+}
+
+
+
+.reset-button{
+    background-color: #DE7471;
+    color: white;
+  border-radius: 18rpx;
+  width: 29vw;
+  font-size: medium;
+height: 100rpx;
+}
+
+
+.reset-button:active {
+    background-color: #A10532;
+  }
+
+
+
+.calculator-button{
+
+background-color: #0C2C45;
+color: white;
+border-radius: 18rpx;
+font-size: medium;
+width: 29vw;
+height: 100rpx;
+
+
+
+text-decoration: none;
+overflow: hidden;
+cursor: pointer;
+
+}
+
+.calculator-button:after{
+    content: '处理中...processing...';
+    background: #68ABA4;
+    display: block;
+
+    opacity: 0;
+    transition: all 0.8s;
+    
+    }
+
+
+    .calculator-button:active:after{
+
+        padding: 0;
+        margin: 0;
+        opacity: 0.9;
+        transition: 0s;
+        
+    }
+
+
+
+
+.input-box___2z32z{
+
+    /* background-attachment: fixed;
+    background-color: red; */
+    flex-direction: column;
+
+
+}
+
+
+
+.button{
+
+  background-color: #B5A09C;
+  color: white;
+  border-radius: 18rpx 18rpx 0px 0px;
+  width: 33vw;
+  font-size: medium;
+
+}
+
+
+.choosing-box{
+        background-attachment: fixed;
+        background-color: white;
+        flex-direction: row;
+        border-radius: 18rpx;
+
+}
+
+.button:active {
+    background-color: #15466B;
+  }
+
+
+.app {
+  text-align: center;
+  padding: 0 24rpx;
+}
+
+
+.text {
+  margin-top: 64rpx;
+  color: #000;
+}
+
+.header {
+  padding-top: 30%;
+  background-color: #282c34;
+  font-size: 40rpx;
+  color: white;
+}
+
+
+
+.logo-image{
+
+  display: flex;
+  margin: auto;
+  height: 100rpx;
+  background-color: #15466B;
+  border-radius:  0px 0px 38.20rpx 38.20rpx;
+  width: 100vw;
+
+}
+

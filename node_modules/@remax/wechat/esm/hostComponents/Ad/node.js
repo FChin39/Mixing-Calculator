@@ -1,0 +1,11 @@
+export var alias = {
+    unitId: 'unit-id',
+    adIntervals: 'ad-intervals',
+    onLoad: 'bindload',
+    onError: 'binderror',
+    onClose: 'bindclose',
+    animation: 'animation',
+    adType: 'ad-type',
+    adTheme: 'ad-theme',
+};
+export var props = Object.values(alias);
