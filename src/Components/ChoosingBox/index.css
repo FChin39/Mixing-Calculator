@@ -4,18 +4,26 @@
 
   background-color: #B5A09C;
   color: white;
-  border-radius: 18px 18px 0px 0px;
+  border-radius: 18px;
   width: 33vw;
+  height: 100px;
   font-size: medium;
 
 }
 
 
 .choosing-box{
+
+        margin: auto;
         background-attachment: fixed;
-        background-color: white;
+        background-color: whitesmoke;
         flex-direction: row;
         border-radius: 18px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 18px;
+        width: 98vw;
+        height: 30vw;
 
 }
 

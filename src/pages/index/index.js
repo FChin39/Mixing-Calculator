@@ -7,7 +7,15 @@ import Logo_yinlvwu from '../../../public/banner_mobile.svg'
 import  './index.css';
 
 
+
+
+
+
+//Todo: Complete the connection between each component/2021/3/24
+
+
 export default () => {
+
 
 
   return (
@@ -15,12 +23,15 @@ export default () => {
     <View>
 
       <Image className='logo-image' src={Logo_yinlvwu} />
-
-      <InputBox/>
-      <Text>---------------</Text>
-      <ChoosingBox/>
-      <Text>--------------</Text>
+      <Text>--------------------OutputBox-----------------</Text>
       <OutputBox/>
+      <Text>------------------ChoosingBox---------------</Text>
+      <ChoosingBox/>
+      <Text>---------------InputBox-----------------</Text>
+      <InputBox/>
+      <Text>-------------------------------------</Text>
+
+
     </View>
 
   );

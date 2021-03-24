@@ -1,20 +1,20 @@
 .input-box{
 
     background-attachment: fixed;
-    background-color: white;
+    background-color: wheat;
     margin: auto;
+    display: flex;
     flex-direction: row;
     border-radius: 18px;
     width: 98vw;
-
 }
 
 .input-bpm-box{
     background-color: white;
     width: 37vw;
     font-size: medium;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     height: 100px;
+    text-align: center;
     border-radius: 18px;
     border: 3.8px solid #0C2C45;
 }
@@ -24,15 +24,21 @@
 .reset-button{
     background-color: #DE7471;
     color: white;
-  border-radius: 18px;
-  width: 29vw;
-  font-size: medium;
-height: 100px;
+    border-radius: 18px;
+    width: 29vw;
+    text-align: center;
+    font-size: medium;
+    height: 100px;
+    border: 3.8px solid #0C2C45;
+
 }
 
 
 .reset-button:active {
     background-color: #A10532;
+    text-align: center;
+    border: 3.8px solid #0C2C45;
+
   }
 
 
@@ -43,14 +49,14 @@ background-color: #0C2C45;
 color: white;
 border-radius: 18px;
 font-size: medium;
+text-align: center;
 width: 29vw;
 height: 100px;
-
-
-
-text-decoration: none;
 overflow: hidden;
 cursor: pointer;
+border: 3.8px solid #0C2C45;
+
+
 
 }
 
@@ -58,7 +64,7 @@ cursor: pointer;
     content: '处理中...processing...';
     background: #68ABA4;
     display: block;
-
+    text-align: center;
     opacity: 0;
     transition: all 0.8s;
     

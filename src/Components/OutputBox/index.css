@@ -1,8 +1,43 @@
-.input-box{
+.output-box{
 
     /* background-attachment: fixed;
     background-color: red; */
+    background-attachment: fixed;
+    display: flex;
     flex-direction: column;
+    border-radius: 18px;
+    width: 98vw;
+    margin: auto;
+    
 
+
+}
+
+.output-box-title{
+
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 18px 18px 0px 0px;
+
+
+
+}
+
+.output-box-title-img{
+    
+    width: 60px;
+    height: 60px;
+
+}
+
+.output-box-title-text{
+
+    width: 300px;
+
+}
+
+.output-box-result{
+    background-color: white;  
 
 }

@@ -6,7 +6,7 @@
 
 .text {
   margin-top: 64px;
-  color: #000;
+  color: #0C2C45;
 }
 
 .header {
@@ -22,9 +22,18 @@
 
   display: flex;
   margin: auto;
-  height: 100px;
+  height: 12vw;
   background-color: #15466B;
   border-radius:  0px 0px 38.2px 38.2px;
   width: 100vw;
 
+}
+
+.bottom{
+
+  display: flex;
+  margin: auto;
+  background-color: #15466B;
+  width: 100vw;
+ position: absolute;
 }
