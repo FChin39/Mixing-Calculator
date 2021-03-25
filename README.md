@@ -24,9 +24,19 @@ BCT = 60/BPM(Beat Per Minute), i.e., the maintaining time of a beat in the music
 The unit of the BCT here is **second**.
 
 ### Compress
+
+<img src="https://cdn.xjtlu.zone:39392/img/public_img/comp_demo.png" width="61.8%">
+
+
+
 - Release Time = BCT*(2^n) (n = 1,0,-1,-2,-3,-4)
 
+
+
 ### Reverb
+
+<img src="https://cdn.xjtlu.zone:39392/img/public_img/reverb_demo.png" width="61.8%">
+
 - Predelay(预延迟)= BCT*(2^n)
   - Room: n = -5
   - Hall: n = -3,-4
@@ -36,8 +46,15 @@ The unit of the BCT here is **second**.
   - Room: n = 1,2
   - Hall: n = 4
   - Plate: n = what you like
+  
+  
 
 ### Delay
+
+<img src="https://cdn.xjtlu.zone:39392/img/public_img/delay_demo.png" width="61.8%">
+
+
+
 Delay Time= BCT*(2^n)
 | Meter | n    |
 | ----- | ---- |

@@ -1,12 +1,13 @@
 .input-box{
 
     background-attachment: fixed;
-    background-color: wheat;
+    background-color: white;
     margin: auto;
     display: flex;
     flex-direction: row;
     border-radius: 18px;
-    width: 98vw;
+    width: 97vw;
+    height: 20vw;
 }
 
 .input-bpm-box{

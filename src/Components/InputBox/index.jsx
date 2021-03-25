@@ -1,9 +1,6 @@
 import * as React from "react";
-import { View, Text, Image, Input, Button } from "remax/wechat";
+import { View, Input, Button } from "remax/wechat";
 import { MCContext } from '../../pages\\index';
-
-// import { MCContext } from '@/app';
-
 import "./index.css";
 
 
@@ -16,23 +13,25 @@ const InputBox = () => {
 
     const run = () => {
 
-        if(bpm<=0||bpm==''){
-        mc.setStatus({ mode: mc.status.mode, exception: true, bct:0})
-        setNumber('')
-        return
+        if (bpm <= 0 || bpm == '') {
+            mc.setStatus({ mode: mc.status.mode, exception: true, bct: 0 })
+            setNumber('')
+            return
         }
 
         mc.setStatus({ mode: mc.status.mode, bct: 60 / bpm, exception: false })
-        console.log('bct:' + mc.status.bct)
-        console.log('mode:' + mc.status.mode)
-        console.log('exception:' + mc.status.exception)
+
+        // For debugger
+        // console.log('bct:' + mc.status.bct)
+        // console.log('mode:' + mc.status.mode)
+        // console.log('exception:' + mc.status.exception)
 
     }
 
 
     const reset = () => {
         setNumber('')
-        mc.setStatus({ mode: mc.status.mode, bct:0, exception: false })
+        mc.setStatus({ mode: mc.status.mode, bct: 0, exception: false })
 
     }
 
@@ -40,7 +39,7 @@ const InputBox = () => {
         <View className='input-box'>
 
             <Input
-                className={mc.status.exception==true?"input-bpm-box-exception":"input-bpm-box"}
+                className={mc.status.exception == true ? "input-bpm-box-exception" : "input-bpm-box"}
                 onInput={e => setNumber(e.detail.value)}
                 value={bpm}
                 type="number"

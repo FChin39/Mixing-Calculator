@@ -1,11 +1,23 @@
+.choosing-box{
 
+  margin: auto;
+  background-attachment: fixed;
+  background-color: white;
+  flex-direction: row;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 18px;
+  width: 97vw;
+
+}
 
 .button{
 
   background-color: #B5A09C;
   color: white;
   border-radius: 18px;
-  width: 33vw;
+  width: 31vw;
   height: 100px;
   font-size: medium;
 
@@ -24,20 +36,7 @@
 }
 
 
-.choosing-box{
 
-        margin: auto;
-        background-attachment: fixed;
-        background-color: whitesmoke;
-        flex-direction: row;
-        border-radius: 18px;
-        display: flex;
-        flex-direction: row;
-        border-radius: 18px;
-        width: 98vw;
-        height: 30vw;
-
-}
 
 /* .button:active {
     background-color: #15466B;

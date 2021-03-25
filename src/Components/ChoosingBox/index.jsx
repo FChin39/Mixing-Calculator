@@ -1,11 +1,7 @@
 import * as React from "react";
 import { View, Text } from "remax/wechat";
-import "./index.css";
 import { MCContext } from '../../pages\\index';
-
-
-
-// import { MCContext } from '@/app';
+import "./index.css";
 
 
 

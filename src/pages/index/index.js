@@ -4,9 +4,7 @@ import InputBox from '../../Components/InputBox';
 import OutputBox from '../../Components/OutputBox';
 import ChoosingBox from '../../Components/ChoosingBox';
 import Logo_yinlvwu from '../../../public/banner_mobile.svg'
-
-
-import  './index.css';
+import './index.css';
 
 
 
@@ -25,25 +23,19 @@ export default () => {
   return (
 
     <MCContext.Provider
-    value={{
-      status,
-      setStatus,
-    }}
-  >
-        <View>
-
-<Image className='logo-image' src={Logo_yinlvwu} />
-<Text>--------------------OutputBox-----------------</Text>
-<OutputBox/>
-<Text>------------------ChoosingBox---------------</Text>
-<ChoosingBox/>
-<Text>---------------InputBox-----------------</Text>
-<InputBox/>
-<Text>-------------------------------------</Text>
-
-</View>
-  </MCContext.Provider>
-);
+      value={{
+        status,
+        setStatus,
+      }}
+    >
+      <View>
+        <Image className='logo-image' src={Logo_yinlvwu} />
+        <OutputBox />
+        <ChoosingBox />
+        <InputBox />
+      </View>
+    </MCContext.Provider>
+  );
 
 
 

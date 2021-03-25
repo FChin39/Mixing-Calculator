@@ -1,10 +1,11 @@
 import * as React from "react";
 import { View, Text, Image } from "remax/wechat";
 import { MCContext } from '../../pages\\index';
-import "./index.css";
 import comp from '../../../public/comp.svg'
 import delay from '../../../public/delay.svg'
 import reverb from '../../../public/reverb.svg'
+import "./index.css";
+
 
 
 
@@ -21,7 +22,7 @@ const OutputBox = () => {
 
   return (
 
-  
+
     <View className='output-box'>
 
       <View className='output-box-title'>
@@ -39,13 +40,14 @@ const OutputBox = () => {
       {/* 压缩Compress */}
       <View className={mode == 'compress' ? 'output-box-result' : 'output-box-result-none'}>
 
-        <div>释放时间</div>
-        <div class="line">1-----------------{bct * 2}</div>
-        <div class="line">2-----------------{bct}</div>
-        <div class="line">3-----------------{bct / 2}</div>
-        <div class="line">4-----------------{bct / 4}</div>
-        <div class="line">5-----------------{bct / 8}</div>
-        <div class="line">6-----------------{bct / 16}</div>
+
+        <Text>释放时间 Release Time(s)</Text>
+        <div class="line">-----------------{(bct * 2).toFixed(3)}</div>
+        <div class="line">-----------------{bct.toFixed(3)}</div>
+        <div class="line">-----------------{(bct / 2).toFixed(3)}</div>
+        <div class="line">-----------------{(bct / 4).toFixed(3)}</div>
+        <div class="line">-----------------{(bct / 8).toFixed(3)}</div>
+        <div class="line">-----------------{(bct / 16).toFixed(3)}</div>
 
 
       </View>
@@ -58,19 +60,19 @@ const OutputBox = () => {
 
         {/* 混响Reverb */}
 
-          <div>预延迟时间</div>
-          <div class="lines">
-            <div class="line">房间Room------------------{bct * (2 ^ (-5))}</div>
-            <div class="line">大厅Hall------------------{bct * (2 ^ (-3))}, {bct * (2 ^ (-4))}</div>
-            <div class="line">板式Plate------------------what you like</div>
+        <Text>预延迟时间 Predelay(s)</Text>
+        <div class="lines">
+          <div class="line">房间Room------------------{(bct / 32).toFixed(3)}</div>
+          <div class="line">大厅Hall------------------{(bct / 8).toFixed(3)}, {(bct / 16).toFixed(3)}</div>
+          <div class="line">板式Plate------------------{(bct / 8).toFixed(3)}, {(bct / 16).toFixed(3)},{(bct / 32).toFixed(3)}</div>
 
 
 
-          <div >混响时间</div>
-            <div class="line">房间Room------------------{bct * 2}, {bct * 4}</div>
-            <div class="line">大厅Hall------------------{bct * 16}</div>
-            <div class="line">板式Plate------------------what you like</div>
-          </div>
+          <div >混响时间 Time(s)</div>
+          <div class="line">房间Room------------------{(bct * 2).toFixed(3)},{bct.toFixed(3)}</div>
+          <div class="line">大厅Hall------------------{(bct * 8).toFixed(3)},{(bct * 4).toFixed(3)}</div>
+          <div class="line">板式Plate------------------Any multiple of the previous value</div>
+        </div>
 
 
       </View>
@@ -83,14 +85,14 @@ const OutputBox = () => {
 
 
 
-          <div>延迟时间</div>
+        <Text>延迟时间 Delay Time(ms)</Text>
 
-            <div class="line">1/2------------------{bct * 2}</div>
-            <div class="line">1/4------------------{bct}</div>
-            <div class="line">1/8------------------{bct / 2}</div>
-            <div class="line">1/16------------------{bct / 4}</div>
-            <div class="line">1/32------------------{bct / 8}</div>
-            <div class="line">1/64------------------{bct / 16}</div>
+        <div class="line">1/2------------------{(bct * 2).toFixed(3) * 1000}</div>
+        <div class="line">1/4------------------{bct.toFixed(3) * 1000}</div>
+        <div class="line">1/8------------------{(bct / 2).toFixed(3) * 1000}</div>
+        <div class="line">1/16------------------{(bct / 4).toFixed(3)* 1000}</div>
+        <div class="line">1/32------------------{(bct / 8).toFixed(3)* 1000}</div>
+        <div class="line">1/64------------------{(bct / 16).toFixed(3)* 1000}</div>
 
 
       </View>
