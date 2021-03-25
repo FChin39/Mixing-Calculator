@@ -12,6 +12,18 @@
 }
 
 
+.buttonActive{
+
+  background-color: #15466B;
+  color: white;
+  border-radius: 18px;
+  width: 33vw;
+  height: 100px;
+  font-size: medium;
+
+}
+
+
 .choosing-box{
 
         margin: auto;
@@ -27,7 +39,7 @@
 
 }
 
-.button:active {
+/* .button:active {
     background-color: #15466B;
-  }
+  } */
 

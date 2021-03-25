@@ -20,6 +20,16 @@
 }
 
 
+.input-bpm-box-exception{
+    background-color: white;
+    width: 37vw;
+    font-size: medium;
+    height: 100px;
+    text-align: center;
+    border-radius: 18px;
+    border: 3.8px solid #A10532;
+}
+
 
 .reset-button{
     background-color: #DE7471;

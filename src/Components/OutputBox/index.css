@@ -20,9 +20,9 @@
     background-color: white;
     border-radius: 18px 18px 0px 0px;
 
-
-
 }
+
+
 
 .output-box-title-img{
     
@@ -31,13 +31,27 @@
 
 }
 
-.output-box-title-text{
 
-    width: 300px;
+.output-box-title-img-none{
+    display: none;
+    width: 60px;
+    height: 60px;
 
 }
 
+/* .output-box-title-text{
+
+    width: 300px;
+
+} */
+
 .output-box-result{
     background-color: white;  
+
+}
+
+.output-box-result-none{
+    background-color: white;  
+    display: none;
 
 }
