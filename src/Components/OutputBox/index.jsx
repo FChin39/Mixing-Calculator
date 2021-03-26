@@ -49,7 +49,7 @@ const OutputBox = () => {
         <Text className="line">----------------------------{(bct / 4).toFixed(3)}</Text>
         <Text className="line">----------------------------{(bct / 8).toFixed(3)}</Text>
         <Text className="line">----------------------------{(bct / 16).toFixed(3)}</Text>
-        <Text className="des">(大于800, 小于50的释放时间需谨慎选择)</Text>
+        <Text className="des">(大于0.800, 小于0.050的释放时间需谨慎选择)</Text>
 
 
 
