@@ -13,7 +13,8 @@ const OutputBox = () => {
 
   const mc = React.useContext(MCContext);
 
-  console.log(mc)
+  //for debugger
+  // console.log(mc)
 
   let bct = mc.status.bct
   let mode = mc.status.mode
@@ -41,13 +42,15 @@ const OutputBox = () => {
       <View className={mode == 'compress' ? 'output-box-result' : 'output-box-result-none'}>
 
 
-        <Text>释放时间 Release Time(s)</Text>
-        <div class="line">-----------------{(bct * 2).toFixed(3)}</div>
-        <div class="line">-----------------{bct.toFixed(3)}</div>
-        <div class="line">-----------------{(bct / 2).toFixed(3)}</div>
-        <div class="line">-----------------{(bct / 4).toFixed(3)}</div>
-        <div class="line">-----------------{(bct / 8).toFixed(3)}</div>
-        <div class="line">-----------------{(bct / 16).toFixed(3)}</div>
+        <Text className='lineTitle'>释放时间 Release Time(s)</Text>
+        <Text className="line">----------------------------{(bct * 2).toFixed(3)}</Text>
+        <Text className="line">----------------------------{bct.toFixed(3)}</Text>
+        <Text className="line">----------------------------{(bct / 2).toFixed(3)}</Text>
+        <Text className="line">----------------------------{(bct / 4).toFixed(3)}</Text>
+        <Text className="line">----------------------------{(bct / 8).toFixed(3)}</Text>
+        <Text className="line">----------------------------{(bct / 16).toFixed(3)}</Text>
+        <Text className="des">(大于800, 小于50的释放时间需谨慎选择)</Text>
+
 
 
       </View>
@@ -57,22 +60,19 @@ const OutputBox = () => {
       <View className={mode == 'reverb' ? 'output-box-result' : 'output-box-result-none'}>
 
 
-
         {/* 混响Reverb */}
 
-        <Text>预延迟时间 Predelay(s)</Text>
-        <div class="lines">
-          <div class="line">房间Room------------------{(bct / 32).toFixed(3)}</div>
-          <div class="line">大厅Hall------------------{(bct / 8).toFixed(3)}, {(bct / 16).toFixed(3)}</div>
-          <div class="line">板式Plate------------------{(bct / 8).toFixed(3)}, {(bct / 16).toFixed(3)},{(bct / 32).toFixed(3)}</div>
+        <Text className='lineTitle'>预延迟时间 Predelay(s)</Text>
+          <Text className="line2">房间Room------------------{(bct / 32).toFixed(3)}</Text>
+          <Text className="line2">大厅Hall----------------{(bct / 8).toFixed(3)}, {(bct / 16).toFixed(3)}</Text>
+          <Text className="line2">板式Plate----------{(bct / 8).toFixed(3)}, {(bct / 16).toFixed(3)}, {(bct / 32).toFixed(3)}</Text>
 
 
 
-          <div >混响时间 Time(s)</div>
-          <div class="line">房间Room------------------{(bct * 2).toFixed(3)},{bct.toFixed(3)}</div>
-          <div class="line">大厅Hall------------------{(bct * 8).toFixed(3)},{(bct * 4).toFixed(3)}</div>
-          <div class="line">板式Plate------------------Any multiple of the previous value</div>
-        </div>
+          <Text className='lineTitle2'>混响时间 Time(s)</Text>
+          <Text className="line2">房间Room----------------{(bct * 2).toFixed(3)}, {bct.toFixed(3)}</Text>
+          <Text className="line2">大厅Hall------------------{(bct * 8).toFixed(3)}, {(bct * 4).toFixed(3)}</Text>
+          <Text className="line2">板式Plate----------上方数值任意整数倍</Text>
 
 
       </View>
@@ -85,14 +85,14 @@ const OutputBox = () => {
 
 
 
-        <Text>延迟时间 Delay Time(ms)</Text>
+        <Text className='lineTitle'>延迟时间 Delay Time(ms)</Text>
 
-        <div class="line">1/2------------------{(bct * 2).toFixed(3) * 1000}</div>
-        <div class="line">1/4------------------{bct.toFixed(3) * 1000}</div>
-        <div class="line">1/8------------------{(bct / 2).toFixed(3) * 1000}</div>
-        <div class="line">1/16------------------{(bct / 4).toFixed(3)* 1000}</div>
-        <div class="line">1/32------------------{(bct / 8).toFixed(3)* 1000}</div>
-        <div class="line">1/64------------------{(bct / 16).toFixed(3)* 1000}</div>
+        <Text className="line3">1/2---------------------{(bct * 2).toFixed(3) * 1000}</Text>
+        <Text className="line3">1/4---------------------{bct.toFixed(3) * 1000}</Text>
+        <Text className="line3">1/8---------------------{(bct / 2).toFixed(3) * 1000}</Text>
+        <Text className="line3">1/16--------------------{(bct / 4).toFixed(3)* 1000}</Text>
+        <Text className="line3">1/32--------------------{(bct / 8).toFixed(3)* 1000}</Text>
+        <Text className="line3">1/64--------------------{(bct / 16).toFixed(3)* 1000}</Text>
 
 
       </View>

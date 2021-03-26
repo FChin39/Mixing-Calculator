@@ -2,12 +2,16 @@
 
     /* background-attachment: fixed;
     background-color: red; */
+    position: relative;
+    top: 5vw;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
     border-radius: 18px;
     width: 97vw;
     margin: auto;
+    background-color: white;
+    height: 77vw;
+    border-radius: 18px;
+    border: 3.8px solid #0C2C45;
     
 
 
@@ -25,10 +29,9 @@
 
 
 .output-box-title-img{
-    
+
     width: 60px;
     height: 60px;
-
 }
 
 
@@ -36,6 +39,7 @@
     display: none;
     width: 60px;
     height: 60px;
+    
 
 }
 
@@ -47,6 +51,8 @@
 
 .output-box-result{
     background-color: white;  
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -54,4 +60,77 @@
     background-color: white;  
     display: none;
 
+
 }
+
+.line{
+    text-align:left;
+    font-size: large;
+    font-weight: bold;
+    color: #15466B;
+    line-height: 8vw;
+    position: relative;
+    top: 6vw;
+    text-align: center
+    
+}
+
+
+.line2{
+    text-align:left;
+    font-size:medium;
+    font-weight: bold;
+    color: #15466B;
+    line-height: 8vw;
+    position: relative;
+    top: 6vw;
+    text-indent:12vw;
+}
+
+.line3{
+    text-align:left;
+    font-size:large;
+    font-weight: bold;
+    color: #15466B;
+    line-height: 8vw;
+    position: relative;
+    top: 7vw;
+    text-indent:17vw;
+}
+
+.des{
+    text-align:left;
+    font-size: smaller;
+    font-weight: bold;
+    color: #15466B;
+    position: relative;
+    top: 6vw;
+    text-align: center
+
+    
+}
+
+.lineTitle{
+    position: relative;
+    top: 3vw;
+    text-align: left;
+    font-size: medium;
+    color: #505253;
+    font-weight: bold;
+    text-indent:2vw;
+
+}
+
+.lineTitle2{
+    position: relative;
+    top: 6vw;
+    text-align: left;
+    font-size: medium;
+    color: #505253;
+    font-weight: bold;
+    text-indent:2vw;
+
+}
+
+
+

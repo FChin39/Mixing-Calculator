@@ -15,8 +15,6 @@ npm run dev
 
 2. Import the file  ``dist`` into your WeChat Development Tools.
 
-
-
 ## Computational formula
 ### Basical calculation time(BCT)
 The value of BCT plays a fundamental part in the Mixing-Calculator.
@@ -53,8 +51,6 @@ The unit of the BCT here is **second**.
 
 <img src="https://cdn.xjtlu.zone:39392/img/public_img/delay_demo.png" width="61.8%">
 
-
-
 Delay Time= BCT*(2^n)
 | Meter | n    |
 | ----- | ---- |
@@ -64,5 +60,7 @@ Delay Time= BCT*(2^n)
 | 1/16  | -2   |
 | 1/32  | -3   |
 | 1/64  | -4   |
+
+
 
 ## To be updated...🤔

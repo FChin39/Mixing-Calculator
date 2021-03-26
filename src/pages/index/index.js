@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image } from 'remax/wechat';
+import { View, Text, Image, CoverView } from 'remax/wechat';
 import InputBox from '../../Components/InputBox';
 import OutputBox from '../../Components/OutputBox';
 import ChoosingBox from '../../Components/ChoosingBox';
@@ -33,6 +33,7 @@ export default () => {
         <OutputBox />
         <ChoosingBox />
         <InputBox />
+        <View className='font' />
       </View>
     </MCContext.Provider>
   );

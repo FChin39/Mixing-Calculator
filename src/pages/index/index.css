@@ -37,3 +37,13 @@
   width: 100vw;
  position: absolute;
 }
+
+.font{
+  display: flex;
+  border-radius:  8px 8px 0px 0px;
+
+  height: 36vw;
+  background-color: #15466B;
+  position: relative;
+  top: 40vw;
+}

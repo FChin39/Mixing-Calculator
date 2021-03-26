@@ -2,13 +2,15 @@
 
   margin: auto;
   background-attachment: fixed;
-  background-color: white;
+  background-color: #F5F5F5;
   flex-direction: row;
   border-radius: 18px;
   display: flex;
   flex-direction: row;
   border-radius: 18px;
   width: 97vw;
+  position: relative;
+  top: 14vw;
 
 }
 
@@ -20,6 +22,8 @@
   width: 31vw;
   height: 100px;
   font-size: medium;
+  border-radius: 18px;
+  border: 3.8px solid #0C2C45;
 
 }
 
@@ -32,6 +36,8 @@
   width: 33vw;
   height: 100px;
   font-size: medium;
+  border-radius: 18px;
+  border: 3.8px solid #0C2C45;
 
 }
 
